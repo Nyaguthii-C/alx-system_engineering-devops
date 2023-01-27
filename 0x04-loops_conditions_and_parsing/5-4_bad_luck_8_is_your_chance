@@ -7,14 +7,15 @@ i=0
 
 while [ "$i" -le 10 ] ;
 do
-	((i++))
-if [ "$i" -eq 4 ]
-then
+
+	if [ "$i" -eq 4 ]
+	then
 	echo "bad luck"
-elif [ "$i" -eq 8 ]
-then
+	elif [ "$i" -eq 8 ]
+	then
 	echo "good luck"
-else
+	else
 	echo "Best School"
-fi
+	fi
+	((i++))
 done
