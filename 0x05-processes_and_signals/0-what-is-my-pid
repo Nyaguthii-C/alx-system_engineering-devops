@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# display my current process pid
+ps
