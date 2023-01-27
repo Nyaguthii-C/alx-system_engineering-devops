@@ -9,6 +9,7 @@ do
 	((i++))
 if [ $i -eq 9 ]
 then
-	echo -e "Best School\nHi"
+	echo "Best School"
+	echo "Hi"
 fi
 done
