@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Bash script that displays content of the current directory
+#In a list format -only part of name after first dash is displayed
+# * selects all,widcard, use cut command
+for i in *;
+do
+	if [ "$i" != "*" ]
+	then
+		echo "$i" | cut -f2 -d "-"
+	fi
+done
