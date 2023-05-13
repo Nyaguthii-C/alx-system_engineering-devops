@@ -9,3 +9,4 @@
 - [0x06-regular_expressions](https://github.com/Nyaguthii-C/alx-system_engineering-devops/tree/main/0x06-regular_expressions)
 - [0x07-networking_basics](https://github.com/Nyaguthii-C/alx-system_engineering-devops/tree/main/0x07-networking_basics)
 - [command_line_for_the_win](https://github.com/Nyaguthii-C/alx-system_engineering-devops/tree/main/command_line_for_the_win) - command line challenge
+- [0x09-web_infrastructure_design](https://github.com/Nyaguthii-C/alx-system_engineering-devops/tree/main/0x09-web_infrastructure_design)
