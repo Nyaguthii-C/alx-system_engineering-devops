@@ -12,6 +12,7 @@
 - Network basics
 - Load balancer
 - Server
+
 **Objectives**
 - To draw a diagram covering the web stack you built with the sysadmin/devops track projects
 - To explain what each component is doing
