@@ -6,3 +6,8 @@ https://view.ziteboard.com/shared/8170039104
 - Dynamic Round Robin distribution algorithm is used on the load balancer. 
 This distributes the incoming traffic accoring to the capability of a given server in time of response time, number of connections
 and speed. There is continous monitoring and the prefernce keeps changing.
+Database Primary-Replica cluster uses replication to keep the data synchronized.  
+- The primary node accepts read and write while Replica node accepts read only.  
+- The load balancer is the SPOF. The entire system depends on a single load balancer that may compromise the website's functioning in case of failure.
+- This design lacks monitoring,https and firewall. This compromises the security of data being transferred as it lacks encryption, exposes the server to harm
+due to the lack of a firewall and without monitoring it is hard to identify if everything is functioning as it is supposed to.
