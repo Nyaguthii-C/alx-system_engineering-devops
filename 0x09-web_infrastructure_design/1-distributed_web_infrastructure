@@ -1,2 +1,8 @@
 https://view.ziteboard.com/shared/8170039104
 
+- Addittional servers increase highh availability for the website www.foo.barby increasing redundancy incase one server goes down.  
+- The load balancer is added to distribute the website's incoming traffic among the available servers . This is to avoid overloading a single server.  
+- There is additional database toeliminate a SPOF and provide ease of recovery in case of failure of one database.    
+- Dynamic Round Robin distribution algorithm is used on the load balancer. 
+This distributes the incoming traffic according to the capability of a given server in time of response time, number of connections
+and speed. There is continous monitoring and the prefernce keeps changing.
