@@ -1,0 +1,10 @@
+https://view.ziteboard.com/shared/08099866248611
+
+- 3 monitoring clients added - Each of the monitors gets data from each of the connected servers to ensure the servers are not overloaded and are running properly.  
+- 3 firewalls added - each of the firewalls manage the traffic from a specified user to the server the request is redirected to by the load balancer.  
+- 1 SSL Certificate -  encrypts data sent out to the server from the user for safety over the network and vice versa.  
+- For the monitoring tool to collect data, the software watches computer metrics, records them and emits an alert if something unusual or that could make the computer not work as as expected happens.  
+- To monitor web servers, one need configure the monitoring client to collect web server data and trigger an alert if the QPS is getting out of control.  
+- Having only one MySQL server capable of accepting writes is an issue because a failure in the master server will result in having no writes to the database anyomore.  
+- Having a server with all the same components might be a problem because their consumption may vary hence the need for some more components for some servers. For instance, more database servers  than application servers may be needed.  
+- If SSL is terminated at the Loadbalancer, the data transmitted from the loadbalancer to the web server is unencrypted, serving a security risk.
