@@ -1,4 +1,4 @@
-- 
+- https://github.com/Nyaguthii-C/alx-system_engineering-devops/issues/1
 - 1 load-balancer (HAproxy) configured as cluster with the other one is added to ensure the load balancer is not a SPOF (single point of failure) and can take over in case of failure.
 - an extra server added for redundancy on a passive level as a high availability solution incase of failure of one server.
 
