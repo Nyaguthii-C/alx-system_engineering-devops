@@ -89,5 +89,14 @@ Requirements:
 - You must be able to explain what the issues are with this infrastructure:
 	- Why terminating SSL at the load balancer level is an issue
 	- Why having only one MySQL server capable of accepting writes is an issue
-	- Why having servers with all the same components (database, web server and application server) might be a problem
+	- Why having servers with all the same components (database, web server and application server) might be a problem  
 
+### 3-scale_up   
+Requirements:
+
+- You must add:  
+	- 1 server  
+	- 1 load-balancer (HAproxy) configured as cluster with the other one  
+	- Split components (web server, application server, database) with their own server  
+- You must be able to explain some specifics about this infrastructure:
+	- For every additional element, why you are adding it
