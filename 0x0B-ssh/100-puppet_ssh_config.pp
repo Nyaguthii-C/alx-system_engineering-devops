@@ -2,7 +2,7 @@
 
 file_line {' declare identity fiile':
   ensure => 'present',
-  path   => '/root/.ssh',
+  path   => '/etc/ssh/ssh_config',
   line   => 'IdentifyFile ~/.ssh/school',
 }
 
