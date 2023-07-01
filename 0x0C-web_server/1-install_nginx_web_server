@@ -8,7 +8,7 @@ ufw allow 'Nginx HTTP'
 
 # return a page that contains the string
 # When querying Nginx at its root / with a GET request (requesting a page) using curl
-echo 'Hello World!' >> /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
 
 # Restart Nginx to apply the changes
 sudo /etc/init.d/nginx restart
