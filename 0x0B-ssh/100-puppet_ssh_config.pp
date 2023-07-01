@@ -5,10 +5,12 @@ file_line { ' declare identity file':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
   line   => '    IdentifyFile ~/.ssh/school',
+  replace => true,
 }
 
 file_line { 'refuse authentication using password':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
   line   => '    PasswordAuthentication no',
+  replace => true,
 }
