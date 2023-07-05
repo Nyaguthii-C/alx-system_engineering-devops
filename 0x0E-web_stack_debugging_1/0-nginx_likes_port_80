@@ -2,6 +2,5 @@
 #Nginx must be running, and listening on port 80 of all the server's active IPv4 IPs
 sudo service nginx start
 sudo apt-get -y update
-rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo /etc/init.d/Nginx restart
+ufw allow 'Nginx HTTP'
+sudo /etc/init.d/nginx restart
