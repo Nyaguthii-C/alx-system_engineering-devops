@@ -20,14 +20,13 @@ class nginx {
         server_name _;
 
         location / {
-          try_files \$uri \$uri/ =404;
           return 301 https://help.dreamhost.com/hc/en-us/articles/216456087-Creating-redirects-with-Nginx;
         }
 
-        location  /var/www/html/index.html {
-          default_type text/plain;
-          return 200 "Hello World!";
-        }
+        location / {
+          root /var/www/html;
+          index index.html;
+	}
       }
     ',
     notify  => Service['nginx'],
