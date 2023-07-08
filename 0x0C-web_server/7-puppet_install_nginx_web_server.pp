@@ -23,9 +23,8 @@ class nginx {
           return 301 https://help.dreamhost.com/hc/en-us/articles/216456087-Creating-redirects-with-Nginx;
         }
 
-        location / {
-          root /var/www/html;
-          index index.html;
+        location /hello{
+	  return 200 "Hello World!";
 	}
       }
     ',
