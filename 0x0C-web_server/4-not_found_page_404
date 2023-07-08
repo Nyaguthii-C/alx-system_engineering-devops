@@ -28,7 +28,7 @@ echo "server {
       internal;
    }
 }" > default
-sudo mv -f default /etc/nginx/sites-available/default
+sudo mv -f default /etc/nginx/sites-enabled/default
 
 # restart to apply changes to nginx server
-sudo service nginx restart
+service nginx restart
