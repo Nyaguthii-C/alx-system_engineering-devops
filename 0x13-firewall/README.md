@@ -5,7 +5,8 @@
 [Basic UFW (Uncomplicated Firewall) commands](https://serverspace.io/support/help/osnovnye-komandy-ufw/)  
 ## Tasks
 - 0-block_all_incoming_traffic_but - install the ufw firewall and setup a few rules on web-01
-- 100-port_forwarding - Configure web-01 so that its firewall redirects port 8080/TCP to port 80/TCP
+- 100-port_forwarding - Configure web-01 so that its firewall redirects port 8080/TCP to port 80/TCP  
+**Hint**  
 To add the `sudo ufw route allow proto tcp from any to any port 8080 redirect to 127.0.0.1 port 80` rule in UFW and have it persist across reboots or service restarts, you can add it to the `/etc/ufw/before.rules` file. Follow these steps:
 
 1. Open the `/etc/ufw/before.rules` file in a text editor with root privileges:
