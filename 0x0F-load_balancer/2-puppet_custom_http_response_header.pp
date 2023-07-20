@@ -1,3 +1,4 @@
+#creating a custom HTTP header response,X-Served-By
 exec {'update':
   command => '/usr/bin/apt-get update',
 }
