@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
+
+sudo apt-get update
+sudo apt-get -y install nginx
+
+# firewall to allow request through port 80
+sudo ufw allow 'Nginx HTTP'
+
+sudo mkdir -p /var/www/html
+
+sudo chmod -R 755 /var/www
+
+echo 'Hello World!' |sudo tee  /var/www/html/index.html
+
+echo "Ceci n'est pas une page" |sudo tee /var/www/html/404.html
+
+string_for_replacement="server_name _;\n\tadd_header X-Served-By \$hostname;\n\trewrite ^\/redirect_me  https:\/\/help.dreamhost.com\/hc\/en-us\/articles\/216456087-Creating-redirects-with-Nginx permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
+
+sudo service nginx restart
