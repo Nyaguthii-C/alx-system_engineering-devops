@@ -1,7 +1,7 @@
 
 # Project: 0x0F. Load balancer
-**DevOps**, **SysAdmin**
-**Resources**  
+**DevOps**, **SysAdmin**  
+## Resources  
 [install-and-configure-haproxy-on-ubuntu-20-04](https://linuxhostsupport.com/blog/how-to-install-and-configure-haproxy-on-ubuntu-20-04/)  
 [an-introduction-to-haproxy-and-load-balancing-concepts](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)
 ## Tasks
