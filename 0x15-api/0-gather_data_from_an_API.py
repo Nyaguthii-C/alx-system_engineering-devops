@@ -21,7 +21,7 @@ if __name__ == "__main__":
     done_task = len([task for task in tasks if task.get("completed")])
     name_url = url + "/users/{}".format(sys.argv[1])
     employee_name = name.get("name")
-    print("Employee {} is done with tasks ({}/{}):"
+    print("Employee {} is done with tasks({}/{}):"
           .format(employee_name, done_task, total_tasks))
     for task in tasks:
         if (task.get("completed")):
