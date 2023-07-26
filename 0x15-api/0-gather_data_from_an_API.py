@@ -10,10 +10,10 @@ import sys
 
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com"
-    tasks_url = url + "/user/{}/todos".format(sys.argv[1])
+    tasks_url = url + "/user/{}/todos".format(int(sys.argv[1]))
     tasks_data = requests.get(tasks_url)
     tasks = tasks_data.json()
-    name_url = url + "/users/{}".format(sys.argv[1])
+    name_url = url + "/users/{}".format(int(sys.argv[1]))
     name_data = requests.get(name_url)
     name = name_data.json()
 
@@ -25,4 +25,4 @@ if __name__ == "__main__":
           .format(employee_name, done_task, total_tasks))
     for task in tasks:
         if (task.get("completed")):
-            print("\t{}".format(task.get("title")))
+            print("\t {}".format(task.get("title")))
